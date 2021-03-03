@@ -1,23 +1,43 @@
-# Compiled class file
-*.class
+# Eclipse
+.classpath
+.project
+.settings/
 
-# Log file
+# Intellij
+.idea/
+*.iml
+*.iws
+
+#log
 *.log
 
-# BlueJ files
-*.ctxt
+# Mac
+.DS_Store
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Maven
+target/
+serverLogs/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+#JMonkey
+.jmonkeybuilder
+*.dylib
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+#Specific application
+meta.properties
+
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+out/
+
+
+editor/scene.json

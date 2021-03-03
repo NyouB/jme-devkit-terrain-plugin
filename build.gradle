@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id "com.jayfella.jme-devkit" version "0.0.24"
+}
+
+group 'fr.exratio'
+version '0.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.7.0")
+    testCompile group: 'org.mockito', name: 'mockito-junit-jupiter', version: '3.7.7'
+    implementation "fr.exratio:jme-swing-devkit:1.1.5"
+}
+
+test {
+    useJUnitPlatform()
+}
